@@ -1,5 +1,5 @@
 Cypress.Commands.add("SignIn", () => {
-    cy.visit('https://react-redux.realworld.io/#/login')
+    cy.visit('/#/login')
     cy.title().should('eq', 'Conduit')
     cy.location('protocol').should('eq', 'https:')
     cy.get('form').within(($form) => {
