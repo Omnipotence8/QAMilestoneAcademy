@@ -1,3 +1,5 @@
+import 'cypress-file-upload';
+
 Cypress.Commands.add("SignIn", () => {
     cy.visit('/#/login')
     cy.title().should('eq', 'Conduit')
